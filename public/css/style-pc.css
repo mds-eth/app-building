@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 290px;
+    color: #6B6B6B;
+    font-size: 14px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.center-pc {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.all-content {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    min-height: 100%;
+    background: linear-gradient(to bottom, #3139AB 1%, rgb(28, 4, 36) 100%);
+}
+
+.all-content-day {
+    width: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    min-height: 100%;
+    background: linear-gradient(to bottom, rgb(223, 209, 131) 1%, rgb(235, 237, 86) 100%);
+    overflow: hidden;
+}
+
+.all-content-night {
+    width: 100%;
+    background-image: url('../img/rocket.jpeg');
+    background-image: no-repeat;
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 5%, rgb(1, 1, 8) 100%);
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    min-height: 100%;
+    overflow: hidden;
+}
+.rocket{
+    width:200px;
+    height:200px;
+
+    position: absolute;
+    top:-20%;
+    left:calc(50% - 400px);
+    background-image: url('../img/rocket.png');
+    background-size:105%;
+    animation-name: motion-rocket;
+    animation-duration: 4s;
+}
+
+@keyframes motion-rocket {
+    0%   {
+        top:100%
+    }
+
+    100% {
+    
+        top:-20%
+    }
+  }
+  
+.header {
+    width: 100%;
+    float: left;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 6px;
+    z-index: 9999;
+    position: relative
+}
+
+.row {
+    width: 100%;
+    float: left;
+}
+.item-control {
+    width: 100%;
+    float: left;
+    margin-bottom: 50px
+}
+.decorate {
+    width: calc(100% + 71px);
+    height: 30px;
+    background-color: #0a1125;
+    margin-left: -36px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.building {
+    width: 290px;
+    height: 700px;
+    background: linear-gradient(to bottom, #131F42 1%, rgb(22, 36, 78) 100%);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.column {
+    flex-direction: column
+}
+
+.floor {
+    width: 100%;
+    float: left;
+    height: 100px;
+    background-color: black;
+    
+}
+.moon { 
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 0 #F39C12; 
+    position: absolute;
+    top:200px;
+    right:300px;
+    animation-name: motion-moon;
+    animation-duration: 4s;
+  } 
+
+.sol-header{
+    width: 200px;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    right: 300px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ffc83c;
+    position: absolute;
+    top: 200px;
+    box-shadow: 0px 3px 85px 27px rgba(206, 172, 4, 0.66);
+    animation-name: motion-sol;
+    animation-duration: 4s;
+    z-index: 1;
+}
+
+@keyframes motion-sol {
+    0%   {
+top:-200px;
+opacity: 0;
+    }
+
+    100% {
+        top:200px;
+        opacity: 1.0;
+    }
+  }
+  
+
+  @keyframes motion-moon {
+    0%   {
+top:-200px;
+opacity: 0;
+    }
+
+    100% {
+        top:200px;
+        opacity: 1.0;
+    }
+  }
+  
+.col {
+    width: 25%;
+    float: left;
+    padding: 4px;
+}
+
+.window {
+    width: 100%;
+    height: 30px;
+    background: black;
+}
+
+.window-active {
+    background: linear-gradient(to bottom, #f4ffce 1%, #daec73 100%);
+    box-shadow: 0px 3px 25px 0px rgba(205, 255, 67, 0.66);
+}
+
+.line {
+    width: 100%;
+    float: left;
+}
+.text-name{
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-top: 10PX;
+    width: 100%;
+    float: left;
+    font-size: 17px;
+}
+.area-name {
+    width: 500px;
+    height: 700px;
+    float: left;
+    font-size:40px;
+    color: white;
+    padding-top:50px;
+    font-weight: 300;
+}
+
+
+.area-control {
+    width: 500px;
+    height: 700px;
+    float: left;
+    padding-top:80px;
+    padding-left:50px;
+    color: white;
+}
+
+.area-bulding {
+    width: 400px;
+    float: left;
+    height: 700px;
+}
+
+.icon-control{
+    height: 30px;
+    margin-left:30px;
+    margin-right:30px;
+}
+
+:root { font-size: 30px; }
+.circle{border-radius:100px}
+
+
+.check {
+	position: relative;
+	background: linear-gradient(90deg, #f19af3, #f099b5);
+	line-height: 0;
+	perspective: 400px;
+}
+
+.check input[type="checkbox"],
+.check label,
+.check label::before,
+.check label::after,
+.check {
+    -webkit-appearance: none !important;
+	appearance: none;
+	display: inline-block;
+	border-radius: 1rem;
+	border: 0;
+	transition: .35s ease-in-out;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.check label {
+	width: 2.2rem;
+	height: 1rem;
+	background: #d7d7d7;
+	overflow: hidden;
+}
+
+.check input[type="checkbox"] {
+	position: absolute;
+	z-index: 1;
+	width: .8rem;
+	height: .8rem;
+	top: .1rem;
+	left: .1rem;
+	background: linear-gradient(45deg, #dedede, #ffffff);
+	box-shadow: 0 6px 7px rgba(0,0,0,0.3);
+	outline: none;
+}
+
+.check input[type="checkbox"]:checked {
+	left: 1.3rem;
+}
+
+.check input[type="checkbox"]:checked + label {
+	background: transparent;
+}
+
+.check label::before,
+.check label::after {
+	content: "· ·";
+	position: absolute;
+	overflow: hidden;
+	left: .15rem;
+	top: .5rem;
+	height: 1rem;
+	letter-spacing: -.04rem;
+	color: #9b9b9b;
+	font-family: "Times New Roman", serif;
+	z-index: 2;
+	font-size: .6rem;
+	border-radius: 0;
+	transform-origin: 0 0 -.5rem;
+	backface-visibility: hidden;
+}
+
+.check label::after {
+	content: "●";
+	top: .65rem;
+	left: .3rem;
+	height: .1rem;
+	width: .35rem;
+	font-size: .2rem;
+	transform-origin: 0 0 -.4rem;
+}
+
+.check input[type="checkbox"]:checked + label::before,
+.check input[type="checkbox"]:checked + label::after {
+	left: 1.55rem;
+	top: .4rem;
+	line-height: .1rem;
+	transform: rotateY(360deg);
+}
+
+.check input[type="checkbox"]:checked + label::after {
+	height: .16rem;
+	top: .55rem;
+	left: 1.6rem;
+	font-size: .6rem;
+	line-height: 0;
+}
